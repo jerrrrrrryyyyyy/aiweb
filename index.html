@@ -1,32 +1,119 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PromptHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-base">
+  <header class="header flex items-center p-4">
+    <div class="logo-square w-4 h-4 bg-gray-400 mr-2"></div>
+    <h1 class="logo-text text-2xl font-bold">PROMPTHUB</h1>
+  </header>
 
-        <div>
-            <h1>website for ai prompts</h1>
-            <p>"Welcome to [Website Name], your go-to hub for AI prompts that fuel creativity, productivity, and innovation. Whether you're an artist, writer, developer, or marketer, our curated collection of prompts will help you generate stunning images, compelling stories, efficient code, and much more. Join our growing community to explore, contribute, and collaborate!"
+  <main class="main p-6">
+    <!-- Hero Section -->
+    <section class="hero mb-12">
+      <h2 class="hero-title text-4xl font-extrabold leading-tight mb-4">
+        DISCOVER,CREATE AND SHARE <br />
+        <span class="text-teal-400">AI PROMPTS</span>
+      </h2>
+      <p class="hero-description text-sm text-gray-400 max-w-xl">
+        Fuel your imagination with AI-generated prompts for writing, art, coding and more.
+        browse community-driven ideas or submit your own!
+      </p>
+      <div class="flex space-x-4 mt-4">
+        <button class="bg-teal-400 text-black font-bold px-4 py-2 rounded">Start Creating</button>
+        <button class="bg-teal-400 text-black font-bold px-4 py-2 rounded">Browse Prompts</button>
+      </div>
+    </section>
+
+    <!-- Trending Prompts -->
+    <section class="section mb-12">
+      <h3 class="section-title text-2xl font-bold mb-2">TRENDING PROMPTS &rarr;</h3>
+      <p class="section-description text-sm text-gray-400 mb-4">
+        Check out the latest and most popular prompts contributed by our community
+      </p>
+      <div class="card-grid grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="card bg-gray-800 rounded h-32"></div>
+        <div class="card bg-gray-800 rounded h-32"></div>
+        <div class="card bg-gray-800 rounded h-32"></div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section mb-12">
+      <h3 class="section-title text-2xl font-bold mb-6">HOW IT WORKS</h3>
+      <div class="how-it-works grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        <div class="how-step">
+          <h4 class="step-title text-teal-400 font-bold mb-2">1. EXPLORE</h4>
+          <p class="step-description text-sm text-gray-400">
+            Browse prompts in various categories ,from AI assisted coding to creative writing.
+          </p>
         </div>
+        <div class="how-step">
+          <h4 class="step-title text-teal-400 font-bold mb-2">2. CREATE</h4>
+          <p class="step-description text-sm text-gray-400">
+            Submit your own prompt and help others get inspired.
+          </p>
+        </div>
+        <div class="how-step">
+          <h4 class="step-title text-teal-400 font-bold mb-2">3. SHARE AND USE</h4>
+          <p class="step-description text-sm text-gray-400">
+            Use prompts for your AI projects and engage with the community.
+          </p>
+        </div>
+      </div>
+      <div class="get-started-container">
+        <button class="get-started-button bg-teal-400 text-black font-bold px-4 py-2 rounded">GET STARTED</button>
+      </div>
+    </section>
 
-       <div>
-            <a href="">
-                <button type="button">Search</button>
-            </a>
-            <a href="categories.html">
-                <button type="button">Explore Prompts</button>
-            </a>
-            <a href="create.html">
-                <button type="button">Submit Prompt</button>
-            </a>
-       </div>
-        
-        <script src="" async defer></script>
-    </body>
+    <!-- Topics Section -->
+    <section class="section mb-12">
+      <h3 class="section-title text-2xl font-bold mb-4">TOPICS</h3>
+      <div class="card-grid grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div class="card bg-gray-800 rounded h-32 flex items-center justify-center">
+          <p class="text-xs text-gray-300">WRITING</p>
+        </div>
+        <div class="card bg-gray-800 rounded h-32 flex items-center justify-center">
+          <p class="text-xs text-gray-300">OPTIMIZATION</p>
+        </div>
+        <div class="card bg-gray-800 rounded h-32 flex items-center justify-center">
+          <p class="text-xs text-gray-300">MISCELLANEOUS</p>
+        </div>
+        <div class="card bg-gray-800 rounded h-32 flex items-center justify-center">
+          <p class="text-xs text-gray-300">ART</p>
+        </div>
+        <div class="card bg-gray-800 rounded h-32 flex items-center justify-center">
+          <p class="text-xs text-gray-300">LEARNING</p>
+        </div>
+        <div class="card bg-gray-800 rounded h-32 flex items-center justify-center">
+          <p class="text-xs text-gray-300">CODING</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Join Section -->
+    <section class="section mb-12">
+      <h3 class="section-title text-2xl font-bold mb-4">JOIN OUR COMMUNITY</h3>
+      <div class="community-grid grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="community-image bg-gray-800 rounded h-64"></div>
+        <div class="community-info flex flex-col justify-between">
+          <div>
+            <h4 class="follow-title text-base font-bold mb-2">FOLLOW US</h4>
+            <div class="icon-group flex space-x-4 text-teal-400 text-2xl">
+              <a href="#" class="icon">📷</a>
+              <a href="#" class="icon">✖️</a>
+              <a href="#" class="icon">🐙</a>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400 mt-4">COPYRIGHT AND FAIR USE</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
