@@ -2,115 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PromptHub</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet"/>
 </head>
-<body class="bg-gray-900 text-white font-base">
-  <header class="header flex items-center p-4">
-    <div class="logo-square w-4 h-4 bg-gray-400 mr-2"></div>
-    <h1 class="logo-text text-2xl font-bold">PROMPTHUB</h1>
+<body>
+  <header class="header">
+    <div class="logo-square"></div>
+    <h1 class="logo-text">PROMPTHUB</h1>
   </header>
 
-  <main class="main p-6">
+  <main class="main">
     <!-- Hero Section -->
-    <section class="hero mb-12">
-      <h2 class="hero-title text-4xl font-extrabold leading-tight mb-4">
-        DISCOVER,CREATE AND SHARE <br />
-        <span class="text-teal-400">AI PROMPTS</span>
+    <section class="hero">
+      <h2 class="hero-title">
+        DISCOVER, CREATE AND SHARE <br/>
+        <span class="highlight">AI PROMPTS</span>
       </h2>
-      <p class="hero-description text-sm text-gray-400 max-w-xl">
+      <p class="hero-description">
         Fuel your imagination with AI-generated prompts for writing, art, coding and more.
-        browse community-driven ideas or submit your own!
+        Browse community-driven ideas or submit your own!
       </p>
-      <div class="flex space-x-4 mt-4">
-        <button class="bg-teal-400 text-black font-bold px-4 py-2 rounded">Start Creating</button>
-        <button class="bg-teal-400 text-black font-bold px-4 py-2 rounded">Browse Prompts</button>
+      <div class="button-group">
+        <a href="create.html"><button class="button">Start Creating</button></a>
+        <a href="categories.html"><button class="button">Browse Prompts</button></a>
       </div>
     </section>
 
     <!-- Trending Prompts -->
-    <section class="section mb-12">
-      <h3 class="section-title text-2xl font-bold mb-2">TRENDING PROMPTS &rarr;</h3>
-      <p class="section-description text-sm text-gray-400 mb-4">
+    <section class="section">
+      <h3 class="section-title">TRENDING PROMPTS →</h3>
+      <p class="section-description">
         Check out the latest and most popular prompts contributed by our community
       </p>
-      <div class="card-grid grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div class="card bg-gray-800 rounded h-32"></div>
-        <div class="card bg-gray-800 rounded h-32"></div>
-        <div class="card bg-gray-800 rounded h-32"></div>
+      <div class="card-grid">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
       </div>
     </section>
 
     <!-- How It Works -->
-    <section class="section mb-12">
-      <h3 class="section-title text-2xl font-bold mb-6">HOW IT WORKS</h3>
-      <div class="how-it-works grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+    <section class="section">
+      <h3 class="section-title">HOW IT WORKS</h3>
+      <div class="how-it-works">
         <div class="how-step">
-          <h4 class="step-title text-teal-400 font-bold mb-2">1. EXPLORE</h4>
-          <p class="step-description text-sm text-gray-400">
-            Browse prompts in various categories ,from AI assisted coding to creative writing.
+          <h4 class="step-title">1. EXPLORE</h4>
+          <p class="step-description">
+            Browse prompts in various categories, from AI-assisted coding to creative writing.
           </p>
         </div>
         <div class="how-step">
-          <h4 class="step-title text-teal-400 font-bold mb-2">2. CREATE</h4>
-          <p class="step-description text-sm text-gray-400">
+          <h4 class="step-title">2. CREATE</h4>
+          <p class="step-description">
             Submit your own prompt and help others get inspired.
           </p>
         </div>
         <div class="how-step">
-          <h4 class="step-title text-teal-400 font-bold mb-2">3. SHARE AND USE</h4>
-          <p class="step-description text-sm text-gray-400">
+          <h4 class="step-title">3. SHARE AND USE</h4>
+          <p class="step-description">
             Use prompts for your AI projects and engage with the community.
           </p>
         </div>
       </div>
       <div class="get-started-container">
-        <button class="get-started-button bg-teal-400 text-black font-bold px-4 py-2 rounded">GET STARTED</button>
+        <button class="button">GET STARTED</button>
       </div>
     </section>
 
     <!-- Topics Section -->
-    <section class="section mb-12">
-      <h3 class="section-title text-2xl font-bold mb-4">TOPICS</h3>
-      <div class="card-grid grid grid-cols-2 sm:grid-cols-3 gap-4">
-        <div class="card bg-gray-800 rounded h-32 flex items-center justify-center">
-          <p class="text-xs text-gray-300">WRITING</p>
-        </div>
-        <div class="card bg-gray-800 rounded h-32 flex items-center justify-center">
-          <p class="text-xs text-gray-300">OPTIMIZATION</p>
-        </div>
-        <div class="card bg-gray-800 rounded h-32 flex items-center justify-center">
-          <p class="text-xs text-gray-300">MISCELLANEOUS</p>
-        </div>
-        <div class="card bg-gray-800 rounded h-32 flex items-center justify-center">
-          <p class="text-xs text-gray-300">ART</p>
-        </div>
-        <div class="card bg-gray-800 rounded h-32 flex items-center justify-center">
-          <p class="text-xs text-gray-300">LEARNING</p>
-        </div>
-        <div class="card bg-gray-800 rounded h-32 flex items-center justify-center">
-          <p class="text-xs text-gray-300">CODING</p>
-        </div>
+    <section class="section">
+      <h3 class="section-title">TOPICS</h3>
+      <div class="card-grid topics-grid">
+        <div class="card"><p>WRITING</p></div>
+        <div class="card"><p>OPTIMIZATION</p></div>
+        <div class="card"><p>MISCELLANEOUS</p></div>
+        <div class="card"><p>ART</p></div>
+        <div class="card"><p>LEARNING</p></div>
+        <div class="card"><p>CODING</p></div>
       </div>
     </section>
 
     <!-- Community Join Section -->
-    <section class="section mb-12">
-      <h3 class="section-title text-2xl font-bold mb-4">JOIN OUR COMMUNITY</h3>
-      <div class="community-grid grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="community-image bg-gray-800 rounded h-64"></div>
-        <div class="community-info flex flex-col justify-between">
+    <section class="section">
+      <h3 class="section-title">JOIN OUR COMMUNITY</h3>
+      <div class="community-grid">
+        <div class="community-image"></div>
+        <div class="community-info">
           <div>
-            <h4 class="follow-title text-base font-bold mb-2">FOLLOW US</h4>
-            <div class="icon-group flex space-x-4 text-teal-400 text-2xl">
+            <h4 class="follow-title">FOLLOW US</h4>
+            <div class="icon-group">
               <a href="#" class="icon">📷</a>
               <a href="#" class="icon">✖️</a>
               <a href="#" class="icon">🐙</a>
             </div>
           </div>
-          <p class="text-sm text-gray-400 mt-4">COPYRIGHT AND FAIR USE</p>
+          <p class="copyright">COPYRIGHT AND FAIR USE</p>
         </div>
       </div>
     </section>
