@@ -1,32 +1,59 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create AI Prompt</title>
+  <link href="create_Prompt.css" rel="stylesheet"/>
+</head>
+<body>
 
-        <div> 
-            <h1>Create Your own Prompt!</h1>
-            <p>Share your creativity with the world! Use the form below to submit an AI prompt. Whether it's for writing, art, coding, or brainstorming, your prompt will be available for others to use and explore.</p>
-        <div>
-        
-        <a href="index.html">Home</a>
-        <div>
-            <p>Enter your prompt here. </p>
-            <button type="button">Submit Prompt</button>
-            <button type="button">Reset</button>
-            <button type="button">Paste</button>
+  <div class="container">
+    <h1>CREATE AND SHARE YOUR AI PROMPT</h1>
+    <p>
+      Share your creativity with the world! Use the form below to submit your AI prompt.
+      Whether it's for writing, art, coding, or brainstorming, your prompt will be available
+      for others to use and explore.
+    </p>
+
+    <form>
+      <div class="row">
+        <div class="col-half">
+          <label for="title">Prompt Title</label>
+          <input type="text" id="title" name="title" placeholder="Enter prompt title">
         </div>
-        
-        <script src="" async defer></script>
-    </body>
+
+        <div class="col-half">
+          <label for="category">Category</label>
+          <input type="text" id="category" name="category" placeholder="e.g., Learning, Art, Coding">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-half">
+          <label for="description">Prompt Description</label>
+          <input type="text" id="description" name="description" placeholder="Short description">
+        </div>
+
+        <div class="col-half">
+          <label for="visibility">Visibility</label>
+          <select id="visibility" name="visibility">
+            <option value="public">Public</option>
+            <option value="private">Private</option>
+            <option value="unlisted">Unlisted</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="input">Prompt Input</label>
+      <textarea id="input" name="input" placeholder="Type your prompt here..."></textarea>
+
+      <div class="buttons">
+        <button type="reset" class="reset-button">RESET</button>
+        <button type="submit" class="submit-button">SUBMIT</button>
+      </div>
+    </form>
+  </div>
+  <a href="index.html">Home</a>
+</body>
 </html>
